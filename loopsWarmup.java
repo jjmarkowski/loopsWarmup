@@ -5,9 +5,11 @@ public class loopsWarmup {
 		int x = 3;
 		int answer;
 
-		answer = sum(5);
+		answer = sum(n);
 		System.out.println(answer);
 
+		answer = xToTheN(x, n);
+		System.out.println(answer);
 	}
 
 	public static int sum(int n) {
@@ -19,5 +21,12 @@ public class loopsWarmup {
 		return sum;
 	}
 
-	
+	public static int xToTheN(int x, int n) {
+		int sum = x;
+		for (int i=1; i<n; i++) {
+			sum = sum * x;
+		}
+
+		return sum;
+	}
 }
