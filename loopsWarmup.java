@@ -10,6 +10,9 @@ public class loopsWarmup {
 
 		answer = xToTheN(x, n);
 		System.out.println(answer);
+
+		answer = factorial(n);
+		System.out.println(answer);
 	}
 
 	public static int sum(int n) {
@@ -29,4 +32,15 @@ public class loopsWarmup {
 
 		return sum;
 	}
+
+	public static int factorial(int n) {
+		int sum = 1;
+		for (int i=n; i>0; i--) {
+			sum = sum * i;	
+		}
+
+		return sum;
+	}
+
+	
 }
